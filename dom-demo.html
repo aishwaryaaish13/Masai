@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Demo</title>
+</head>
+<body>
+
+    <h1 id="mainHeading">Hello!</h1>
+
+    <p>This is paragraph one.</p>
+    <p>This is paragraph two.</p>
+    <p>This is paragraph three.</p>
+
+    <div class="container">
+        This is a container div.
+    </div>
+
+    <script>
+        
+        const heading = document.getElementById("mainHeading");
+        heading.textContent = "Welcome to the DOM World!";
+
+        
+        const paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.color = "blue";
+        }
+
+        
+        const containerDiv = document.querySelector(".container");
+        containerDiv.style.backgroundColor = "yellow";
+    </script>
+
+</body>
+</html>
